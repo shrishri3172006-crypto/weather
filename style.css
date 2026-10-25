@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #243047;
+}
+
+.weather-container {
+    max-width: 900px;
+    margin: auto;
+    background: #f8fbff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    text-align: center;
+    background: #2563eb;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 15px;
+}
+
+.search input {
+    width: 65%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #ccd5e0;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.current-weather {
+    margin: 0 25px;
+    padding: 30px 15px;
+    text-align: center;
+    background: #e8f2ff;
+    border-radius: 15px;
+}
+
+.current-weather h2 {
+    font-size: 28px;
+}
+
+.date {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+.weather-icon {
+    font-size: 75px;
+    margin: 15px;
+}
+
+.current-weather h3 {
+    font-size: 48px;
+    color: #2563eb;
+}
+
+.condition {
+    margin: 8px 0 25px;
+    font-size: 18px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.details div {
+    padding: 15px;
+}
+
+.details span {
+    font-size: 25px;
+}
+
+.details p {
+    margin: 8px 0;
+    color: #64748b;
+}
+
+.forecast {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.forecast h2 {
+    margin-bottom: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.day {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    flex: 1;
+    min-width: 100px;
+}
+
+.day span {
+    display: block;
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.day strong,
+.day small {
+    display: block;
+    margin: 6px;
+}
+
+.day small {
+    color: #64748b;
+}
+
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .current-weather {
+        margin: 0 12px;
+    }
+
+    .current-weather h2 {
+        font-size: 23px;
+    }
+
+    .search input {
+        width: 65%;
+    }
+}
